@@ -2,4 +2,128 @@
 
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+  font-family: 'IBM Plex mono', sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  background-color: var(--background-text-color);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+.header {
+  padding: 10px;
+  background: var(--header-background) no-repeat center / cover;
+  position: relative;
+  display: grid;
+  grid-template-rows: 1fr;
+  gap: 55px 10px;
+}
+
+.header::before {
+  content: '';
+  position: absolute;
+  display: block;
+  top: 10px;
+  right: 10px;
+  width: 25px;
+  height: 25px;
+  border-top: 1px solid var(--accent-color);
+  border-right: 1px solid var(--accent-color);
+}
+
+.header::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 25px;
+  height: 25px;
+  bottom: 10px;
+  left: 10px;
+  border-bottom: 1px solid var(--accent-color);
+  border-left: 1px solid var(--accent-color);
+}
+
+.header__theme-menu {
+  justify-self: end;
+  align-self: end;
+}
+
+.header__theme-menu-list {
+  list-style: none;
+  margin: 66px 0 0;
+}
+
+.header__theme-menu-list .header__theme-menu-item:not(:last-child) {
+  margin-bottom: 13px;
+}
+
+.header__theme-menu-button {
+  background: transparent;
+  border: 1px solid transparent;
+  color: var(--accent-color);
+  font-family: 'IBM Plex mono', sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: lowercase;
+  padding-left: 13px;
+  padding-right: 13px;
+  margin-right: 10px;
+}
+
+.header__theme-menu-button_active {
+  border: 1px solid var(--accent-color);
+}
+
+.header__label {
+  color: var(--title-color);
+  text-shadow: 4px 4px 0px var(--shadow-color);
+  font-size: 116px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 82.5%;
+  justify-self: start;
+  margin: 0;
+}
+
+.header__title {
+  background-color: var(--background-color);
+  color: var(--background-text-color);
+  font-weight: 700;
+  line-height: 23.4px;
+  margin-bottom: 66px;
+  justify-self: end;
+}
+
+.header__title_paragraph {
+  margin: 0;
+}
+
+.content {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 40px;
+  line-height: 130%;
+}
+
+.content__article-title {
+  color: var(--accent-color);
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.content__description-title {
+  color: var(--background-text-color);
+  background-color: var(--accent-color);
+  font-weight: 700;
+}
+
+.content__description-text {
+  color: var(--text-color);
+}
+
+.normal-weight {
+  font-weight: 400;
 }
