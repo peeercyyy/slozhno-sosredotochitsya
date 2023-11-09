@@ -17,3 +17,7 @@
   --title-color: #ffc2e6;
   --shadow-color: #ff8dcb;
 }
+
+.theme_light .header__rec {
+  display: none;
+}
