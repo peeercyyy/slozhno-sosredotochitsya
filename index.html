@@ -11,6 +11,7 @@
     <meta
       name="color-scheme"
       content="dark light" />
+    <title>Сложно сосредоточиться</title>
     <link
       rel="icon"
       href="./images/favicon.ico"
@@ -20,8 +21,14 @@
       href="./images/favicon.svg"
       type="image/svg+xml" />
     <link
+      rel="apple-touch-icon"
+      href="./images/mobile-icon.png" />
+    <link
       rel="stylesheet"
       href="./fonts/fonts.css" />
+    <link
+      rel="stylesheet"
+      href="./styles/globals.css" />
     <link
       rel="stylesheet"
       href="./styles/variables.css" />
@@ -34,7 +41,6 @@
     <link
       rel="stylesheet"
       href="./styles/style.css" />
-    <title>Сложно сосредоточиться</title>
   </head>
   <body class="page">
     <header class="header decorated-zone">
@@ -69,11 +75,11 @@
       <h1 class="header__label shadow__label">no focus</h1>
       <div class="header__title title__decor">
         <p class="header__title_paragraph">
-          Что делать, когда не можешь делать ничего
+          Что делать, когда не можешь делать&nbsp;ничего
         </p>
         <p class="header__title_paragraph">
-          Или почему нам так сложно сконцентрироваться, особенно когда очень
-          надо
+          Или почему нам так сложно сконцентрироваться, особенно
+          когда&nbsp;очень надо
         </p>
       </div>
     </header>
@@ -82,7 +88,7 @@
         <h2 class="content__article-title">
           Почему сосредоточиться так сложно
         </h2>
-        <div class="content__description-block">
+        <div class="content__description-block content__description-vertical">
           <div class="content__description-article">
             <p class="content__description-title title__decor">
               Многозадачность
@@ -91,11 +97,17 @@
               Особенно сложно сосредоточиться, когда задач много и все они —
               важные. Где же легендарная многозадачность, когда она так нужна
               вам (и всем нанимающим менеджерам этого мира)? А дело в том, что
-              её просто не существует. Исследователи выяснили, что мозгу тяжело
-              концентрироваться даже на двух делах одновременно. А когда в поле
-              внимания попадает несколько важных задач, организм паникует и
-              выделяет кортизол и адреналин — «гормоны стресса». Из-за этого мы
-              работаем невнимательно: ошибаемся и быстро устаём.
+              её просто не существует. Исследователи
+              <a
+                href="https://dana.org/article/multicosts-of-multitasking/"
+                target="_blank"
+                class="content__link"
+                >выяснили</a
+              >, что мозгу тяжело концентрироваться даже на двух делах
+              одновременно. А когда в поле внимания попадает несколько важных
+              задач, организм паникует и выделяет кортизол и адреналин —
+              «гормоны стресса». Из-за этого мы работаем невнимательно:
+              ошибаемся и быстро устаём.
             </p>
           </div>
           <div class="content__description-article">
@@ -117,7 +129,7 @@
         <h2 class="content__article-title">
           Что снижает концентрацию внимания?
         </h2>
-        <div class="content__description-block">
+        <div class="content__description-block content__description-horizontal">
           <div class="content__description-article">
             <p class="content__description-title title__decor">
               Многозадачность
@@ -161,7 +173,7 @@
           Как концентрироваться лучше, чем золотая рыбка (то есть дольше трёх
           секунд)
         </h2>
-        <div class="content__description-block">
+        <div class="content__description-block content__description-vertical">
           <div class="content__description-article">
             <p class="content__description-title title__decor bigger-margin">
               5 простых (на самом деле не очень) советов
@@ -199,12 +211,16 @@
             </p>
             <p class="content__description-text">
               Или даже пробегитесь. Лучше найти парк или лес: один эксперимент
-              показал, что созерцание природы повышает концентрацию, в то время
-              как после просмотра городских пейзажей она наоборот понижается.
-              Можно совместить прогулку с физическими упражнениями или бегом —
-              так в мозг поступит ещё больше кислорода и он будет лучше
-              работать. Но и простая двадцатиминутная прогулка — тоже отличный
-              вариант.
+              <a
+                href="https://www.sciencedirect.com/science/article/abs/pii/S0272494415000328"
+                target="_blank"
+                class="content__link"
+                >показал</a
+              >, что созерцание природы повышает концентрацию, в то время как
+              после просмотра городских пейзажей она наоборот понижается. Можно
+              совместить прогулку с физическими упражнениями или бегом — так в
+              мозг поступит ещё больше кислорода и он будет лучше работать. Но и
+              простая двадцатиминутная прогулка — тоже отличный вариант.
             </p>
           </div>
           <div class="content__description-article">
@@ -232,41 +248,40 @@
         </div>
       </section>
       <section class="content__article">
-        <h2 class="content__article-title">
-          Как концентрироваться лучше, чем золотая рыбка (то есть дольше трёх
-          секунд)
+        <h2 class="content__article-title content__gallery-title title__decor">
+          А можно в картинках?
         </h2>
         <div class="content__gallery">
           <img
             src="./images/sunset.png"
             alt="картинка с закатом"
-            class="content__gallery-image"
+            class="content__gallery-image gallery__sunset"
             loading="lazy" />
           <img
             src="./images/ice-cream.png"
             alt="картинка с мороженным в виде котиков"
-            class="content__gallery-image"
+            class="content__gallery-image gallery__cats"
             loading="lazy" />
           <img
             src="./images/tape.png"
             alt="Картинка с нарисованной аудиокассетой"
-            class="content__gallery-image"
+            class="content__gallery-image gallery__tape"
             loading="lazy" />
           <img
             src="./images/books.png"
             alt="Картинка с нарисованной стопкой книг"
-            class="content__gallery-image"
+            class="content__gallery-image gallery__books"
             loading="lazy" />
           <img
             src="./images/street.png"
             alt="Картинка с нарисованной улицей"
-            class="content__gallery-image"
+            class="content__gallery-image gallery__street"
             loading="lazy" />
         </div>
       </section>
     </main>
     <footer class="footer decorated-zone">
-      <h2 class="footer__title shadow__label">focus</h2>
+      <h2 class="footer__title shadow__label-footer">focus</h2>
     </footer>
     <script src="./scripts/script.js"></script>
   </body>

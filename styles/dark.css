@@ -15,5 +15,7 @@
   --text-color: #f1b2ce;
   --header-background: url('../images/cover-image-dark.png');
   --title-color: #db00ff;
+  --article-title: var(--accent-color);
   --shadow-color: #ff0070;
+  --toggler-hover: rgba(255, 0, 112, 0.4);
 }
