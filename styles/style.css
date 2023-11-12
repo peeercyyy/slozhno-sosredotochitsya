@@ -2,7 +2,6 @@
 
 .page {
   margin: 0;
-  padding: 10px;
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
   font-family: 'IBM Plex mono', sans-serif;
   font-size: 18px;
@@ -60,12 +59,14 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  block-size: 100vb;
   gap: 55px 0;
+  margin: 10px;
+  block-size: 100vb;
 }
 
 .header__rec {
   position: absolute;
+  top: 0;
   right: 10px;
   color: var(--accent-color);
   line-height: 25px;
@@ -96,7 +97,6 @@
   grid-row: 1;
   justify-self: end;
   align-self: end;
-  margin-block-end: 11px;
 }
 
 .header__theme-menu-list {
@@ -165,7 +165,7 @@
 }
 
 .content {
-  padding-block-start: 40px;
+  margin: 50px 10px 0;
   line-height: 130%;
 }
 
@@ -224,6 +224,7 @@
   display: grid;
   justify-content: center;
   align-content: center;
+  margin: 50px 10px 10px;
   block-size: 100vb;
 }
 
@@ -236,8 +237,8 @@
 }
 
 @media (min-width: 768px) {
-  .page {
-    padding: 20px;
+  .header {
+    margin: 20px;
   }
 
   .header__title {
@@ -245,7 +246,7 @@
   }
 
   .content {
-    padding-block-start: 60px;
+    margin: 80px 20px 0;
   }
 
   .content__article {
@@ -296,6 +297,10 @@
   .gallery__street {
     grid-column: 2 / -1;
     grid-row: 3 / -1;
+  }
+
+  .footer {
+    margin: 80px 20px 20px;
   }
 }
 
