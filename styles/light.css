@@ -11,14 +11,11 @@
   */
   --accent-color: #ff8dcb;
   --background-text-color: #353430;
-  --background-color: var(--accent-color);
   --text-color: #353430;
   --header-background: url('../images/cover-image-light.png');
   --title-color: #ffc2e6;
   --article-title: var(--text-color);
-  --shadow-color: #ff8dcb;
   --toggler-hover: rgba(50, 49, 45, 0.4);
-  --back-color: #fff1f7;
 }
 
 .theme_light .header__rec {
@@ -29,14 +26,11 @@
   :root {
     --accent-color: #ff8dcb;
     --background-text-color: #353430;
-    --background-color: var(--accent-color);
     --text-color: #353430;
     --header-background: url('../images/cover-image-light.png');
     --title-color: #ffc2e6;
     --article-title: var(--text-color);
-    --shadow-color: #ff8dcb;
     --toggler-hover: rgba(50, 49, 45, 0.4);
-    --back-color: #fff1f7;
   }
   .header__rec {
     display: none;

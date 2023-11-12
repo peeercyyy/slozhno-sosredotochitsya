@@ -5,11 +5,9 @@
 :root {
   --accent-color: #ff0070;
   --background-text-color: #000028;
-  --background-color: var(--accent-color);
   --text-color: #f1b2ce;
   --header-background: url('../images/cover-image-dark.png');
   --title-color: #db00ff;
-  --shadow-color: #ff0070;
   --article-title: var(--accent-color);
   --logo-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   --toggler-hover: rgba(255, 0, 112, 0.4);
