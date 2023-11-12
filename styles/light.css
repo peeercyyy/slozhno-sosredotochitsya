@@ -16,8 +16,9 @@
   --header-background: url('../images/cover-image-light.png');
   --title-color: #ffc2e6;
   --article-title: var(--text-color);
-  --shadow-color: #ff0070;
+  --shadow-color: #ff8dcb;
   --toggler-hover: rgba(50, 49, 45, 0.4);
+  --back-color: #fff1f7;
 }
 
 .theme_light .header__rec {
@@ -33,10 +34,11 @@
     --header-background: url('../images/cover-image-light.png');
     --title-color: #ffc2e6;
     --article-title: var(--text-color);
-    --shadow-color: #ff0070;
+    --shadow-color: #ff8dcb;
     --toggler-hover: rgba(50, 49, 45, 0.4);
+    --back-color: #fff1f7;
   }
-  .theme_light .header__rec {
+  .header__rec {
     display: none;
   }
 }

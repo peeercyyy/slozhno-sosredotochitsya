@@ -18,6 +18,8 @@
   --article-title: var(--accent-color);
   --shadow-color: #ff0070;
   --toggler-hover: rgba(255, 0, 112, 0.4);
+
+  --back-color: #000028;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -31,5 +33,6 @@
     --article-title: var(--accent-color);
     --shadow-color: #ff0070;
     --toggler-hover: rgba(255, 0, 112, 0.4);
+    --back-color: #000028;
   }
 }
