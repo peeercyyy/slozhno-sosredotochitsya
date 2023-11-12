@@ -1,21 +1,21 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
+  margin: 0;
+  padding: 10px;
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
   font-family: 'IBM Plex mono', sans-serif;
   font-size: 18px;
   font-style: normal;
   background-image: var(--header-background);
-  background-attachment: fixed;
   background-position: center;
   background-size: cover;
-  padding: 10px;
-  margin: 0;
+  background-attachment: fixed;
 }
 
 .title__decor {
-  background-color: var(--background-color);
   color: var(--background-text-color);
+  background-color: var(--background-color);
 }
 
 .content__link {
@@ -24,7 +24,7 @@
 }
 
 .content__link:hover {
-  border-bottom: 1px solid var(--text-color);
+  border-block-end: 1px solid var(--text-color);
 }
 
 .content__link:focus {
@@ -34,41 +34,41 @@
 .decorated-zone::before {
   content: '';
   position: absolute;
-  display: block;
   top: 0;
   right: 0;
+  display: block;
   width: 25px;
   height: 25px;
-  border-top: 1px solid var(--accent-color);
-  border-right: 1px solid var(--accent-color);
+  border-inline-end: 1px solid var(--accent-color);
+  border-block-start: 1px solid var(--accent-color);
 }
 
 .decorated-zone::after {
   content: '';
   position: absolute;
+  bottom: 0;
+  left: 0;
   display: block;
   width: 25px;
   height: 25px;
-  bottom: 0;
-  left: 0;
-  border-bottom: 1px solid var(--accent-color);
-  border-left: 1px solid var(--accent-color);
+  border-inline-start: 1px solid var(--accent-color);
+  border-block-end: 1px solid var(--accent-color);
 }
 
 .header {
   position: relative;
   display: grid;
-  grid-template-rows: repeat(3, 1fr);
   grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
   block-size: 100vb;
 }
 
 .header__rec {
-  text-transform: uppercase;
-  color: var(--accent-color);
   position: absolute;
   right: 10px;
+  color: var(--accent-color);
   line-height: 25px;
+  text-transform: uppercase;
 }
 
 .header__rec::after {
@@ -76,8 +76,8 @@
   display: inline-block;
   width: 10px;
   height: 10px;
+  margin-inline-start: 10px;
   border-radius: 50%;
-  margin-left: 10px;
   background-color: var(--accent-color);
   filter: drop-shadow(0 0 4px var(--accent-color));
 }
@@ -93,38 +93,38 @@
 .header__theme-menu {
   grid-column: 4 / span 1;
   grid-row: 1;
-  align-self: center;
   justify-self: end;
+  align-self: center;
 }
 
 .header__theme-menu-list {
-  list-style: none;
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 
 .header__theme-menu-list .header__theme-menu-item:not(:last-child) {
-  margin-bottom: 13px;
+  margin-block-end: 13px;
 }
 
 .header__theme-menu-button {
-  background: transparent;
   border: 1px solid transparent;
+  padding: 3px 13px;
   color: var(--article-title);
   font-family: 'IBM Plex mono', sans-serif;
+  font-weight: 400;
   font-size: 18px;
   font-style: normal;
-  font-weight: 400;
   line-height: 18px;
   text-transform: lowercase;
-  padding: 3px 13px;
-  appearance: none;
+  background: transparent;
   cursor: pointer;
+  appearance: none;
 }
 
 .header__theme-menu-button:focus {
+  border-block-end: 1px solid var(--article-title);
   outline: none;
-  border-bottom: 1px solid var(--article-title);
 }
 
 .header__theme-menu-button:hover {
@@ -137,26 +137,25 @@
 }
 
 .header__label {
-  color: var(--title-color);
-  font-size: var(--logo-size);
-  font-style: normal;
-  font-weight: 700;
-  line-height: 82.5%;
   grid-column: 1 / 5;
   grid-row: 2;
-  margin: 0;
   justify-self: start;
   align-self: center;
+  margin: 0;
+  color: var(--title-color);
+  font-weight: 700;
+  font-size: var(--logo-size);
+  font-style: normal;
+  line-height: 82.5%;
 }
 
 .header__title {
-  font-weight: 700;
-  line-height: 23.4px;
-  justify-self: end;
   grid-column: 1 / 6;
   grid-row: 3;
-  align-self: center;
   justify-self: end;
+  align-self: center;
+  font-weight: 700;
+  line-height: 23.4px;
 }
 
 .header__title_paragraph {
@@ -164,31 +163,31 @@
 }
 
 .content {
-  padding-top: 40px;
+  padding-block-start: 40px;
   line-height: 130%;
 }
 
 .content__article {
-  margin: 0 0 30px;
   display: grid;
+  margin: 0 0 30px;
 }
 
 .content__article-title {
+  margin-block-start: 0;
+  margin-block-end: 20px;
   color: var(--article-title);
   font-weight: 700;
   font-size: 18px;
-  margin-top: 0;
-  margin-bottom: 20px;
 }
 
 .content__description-title {
-  font-weight: 700;
   margin: 0 0 10px;
+  font-weight: 700;
 }
 
 .content__description-text {
-  color: var(--text-color);
   margin: 0 0 20px;
+  color: var(--text-color);
 }
 .content__description-block {
   margin: 0;
@@ -199,13 +198,13 @@
 }
 
 .bigger-margin {
-  margin-bottom: 20px;
+  margin-block-end: 20px;
 }
 
 .content__gallery-title {
-  color: var(--background-text-color);
   justify-self: start;
   align-self: start;
+  color: var(--background-text-color);
 }
 
 .content__gallery {
@@ -222,17 +221,17 @@
 .footer {
   position: relative;
   display: grid;
-  padding: 266px 0;
   justify-content: center;
   align-content: center;
+  block-size: 100vb;
 }
 
 .footer__title {
+  color: var(--title-color);
+  font-weight: 700;
   font-size: var(--logo-size);
   font-style: normal;
-  font-weight: 700;
   line-height: 82.5%; /* 95.7px */
-  color: var(--title-color);
 }
 
 @media (min-width: 768px) {
@@ -245,13 +244,13 @@
   }
 
   .content {
-    padding-top: 60px;
+    padding-block-start: 60px;
   }
 
   .content__article {
     grid-template-columns: repeat(3, 1fr);
     gap: 0 20px;
-    margin-bottom: 80px;
+    margin-block-end: 80px;
   }
 
   .content__description-horizontal {
@@ -263,15 +262,15 @@
   }
 
   .content__gallery {
-    grid-column: 1 / 4;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(4, auto);
+    grid-column: 1 / 4;
     gap: 20px;
   }
 
   .content__gallery-title {
-    justify-self: stretch;
     grid-column: 1 / -1;
+    justify-self: stretch;
   }
 
   .gallery__sunset {
@@ -285,13 +284,13 @@
   }
 
   .gallery__tape {
-    grid-row: 2 / -1;
     grid-column: 1 /2;
+    grid-row: 2 / -1;
   }
 
   .gallery__books {
-    grid-row: 2 / 3;
     grid-column: 2 / 3;
+    grid-row: 2 / 3;
   }
 
   .gallery__street {
@@ -303,8 +302,8 @@
 @media (min-width: 1024px) {
   .header__theme-menu {
     grid-column: 2 / 4;
-    align-self: start;
     justify-self: center;
+    align-self: start;
   }
 
   .header__theme-menu-list {

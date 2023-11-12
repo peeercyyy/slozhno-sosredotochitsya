@@ -23,3 +23,20 @@
 .theme_light .header__rec {
   display: none;
 }
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --accent-color: #ff8dcb;
+    --background-text-color: #353430;
+    --background-color: var(--accent-color);
+    --text-color: #353430;
+    --header-background: url('../images/cover-image-light.png');
+    --title-color: #ffc2e6;
+    --article-title: var(--text-color);
+    --shadow-color: #ff0070;
+    --toggler-hover: rgba(50, 49, 45, 0.4);
+  }
+  .theme_light .header__rec {
+    display: none;
+  }
+}
